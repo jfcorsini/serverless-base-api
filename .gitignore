@@ -1,6 +1,6 @@
 
 # Typescript output directory
-dist/
+build/
 
 # Created by https://www.gitignore.io/api/osx,node,linux,windows
 

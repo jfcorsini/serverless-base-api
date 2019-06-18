@@ -10,7 +10,7 @@ Resources:
   SampleFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ../dist/
+      CodeUri: ./build/
       Handler: index.handler
       Runtime: nodejs8.10
       Events:

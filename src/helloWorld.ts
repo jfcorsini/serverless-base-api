@@ -1,12 +1,6 @@
-// content of src/ingest/index.ts
-
-import { Context, SNSEvent } from 'aws-lambda';
-
-const table = process.env.TABLE_NAME
-
-interface CustomResponse {
-  statusCode: number,
-  body: string,
+export interface CustomResponse {
+    statusCode: number;
+    body: string;
 }
 
 /**
@@ -16,10 +10,10 @@ interface CustomResponse {
  * @param {number} points - points that should be added to the customer
  */
 export const getResponse = (message: string): CustomResponse => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message
-    })
-  }
-}
+    return {
+        statusCode: 200,
+        body: JSON.stringify({
+            message,
+        }),
+    };
+};

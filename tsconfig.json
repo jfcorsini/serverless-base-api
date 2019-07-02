@@ -9,13 +9,14 @@
     ],
     "types": [
       "node",
+      "aws-lambda",
     ],
     "esModuleInterop": true,
     "inlineSourceMap": true,
     "resolveJsonModule": true
   },
   "include": [
-    "./src/**/*.ts"
+    "./index.ts"
   ],
   "outDir": "build",
 }

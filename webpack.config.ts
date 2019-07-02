@@ -4,6 +4,7 @@ import webpack from 'webpack';
 const config: webpack.Configuration = {
     entry: {
         main: './index.ts',
+        auth: './auth.ts',
     },
     mode: 'development',
     module: {
@@ -19,7 +20,7 @@ const config: webpack.Configuration = {
         extensions: ['.ts', '.js'],
     },
     output: {
-        filename: 'index.js',
+        filename: '[name].js',
         path: path.join(__dirname, '/build/'),
     },
 };

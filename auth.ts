@@ -1,6 +1,6 @@
 'use strict';
 
-import { getResponse, CustomResponse } from './src/helloWorld';
+import { getAuthResponse, CustomResponse } from './src/auth';
 
 export const handler = async (
     event: AWSLambda.APIGatewayEvent,
@@ -8,7 +8,7 @@ export const handler = async (
 ): Promise<AWSLambda.APIGatewayProxyResult> => {
     let response: CustomResponse;
     try {
-        response = getResponse('Hello, world', 200);
+        response = getAuthResponse('Hello, world');
 
         console.log('This is the response', response);
     } catch (err) {

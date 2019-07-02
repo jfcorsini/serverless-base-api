@@ -1,13 +1,14 @@
 {
   "name": "serverless-base-api",
   "version": "1.0.0",
-  "description": "Serverless Base API to develop severless APIs in NodeJS with AWS Lambda and test locally with SAM",
+  "description": "Serverless Base API to develop severless APIs in NodeJS with AWS Lambda",
   "main": "index.js",
   "author": "João Fernando Corsini",
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.27",
     "@types/node": "^12.0.10",
+    "@types/ramda": "^0.26.15",
     "@types/webpack": "^4.4.34",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
@@ -25,5 +26,8 @@
   "scripts": {
     "build:watch": "tsc --watch",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts}' --quiet --fix"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
   }
 }

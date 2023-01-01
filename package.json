@@ -17,11 +17,11 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2",
-    "ts-loader": "^6.0.3",
+    "ts-loader": "^9.4.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.2",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "build:watch": "tsc --watch",
